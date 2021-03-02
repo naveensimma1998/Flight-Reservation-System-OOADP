@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f7bc9f9-80d9-44ab-853b-8fbea5ff3781" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Passenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/RegularTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/RegularTicket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/TouristTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLIGHTPROJECT/com/company/TouristTicket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RegularTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RegularTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TouristTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TouristTicket.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f7bc9f9-80d9-44ab-853b-8fbea5ff3781" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

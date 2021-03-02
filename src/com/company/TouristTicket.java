@@ -54,7 +54,7 @@ public class TouristTicket extends Ticket {
           }
           if (index == -1) {
                return;
-          }
+              }
 
           for (int i = index; i < selectedTourLocations.length - 1; i++) {
                selectedTourLocations[i] = selectedTourLocations[i + 1];
