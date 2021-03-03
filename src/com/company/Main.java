@@ -16,9 +16,17 @@ public class Main {
                 "ArrivalDateAndTime",false,"maldives beach no 123",new String[]{"beach","ocean park","chocolate factory"});
 
         System.out.println(regularTicket.getFlightName());
+        touristTicket.getTouristLocations();
         System.out.println(regularTicket.getPnr());
         System.out.println(touristTicket.getPnr());
         System.out.println(regularTicket.flightDuration());
+        System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
+        touristTicket.addTourlistLocations( "beach123");
+        touristTicket.addTourlistLocations("ocean park123");
+        System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
+        touristTicket.removeTouristLocations("beach");
+        System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
+        touristTicket.removeTouristLocations("beach123");
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
     }
 

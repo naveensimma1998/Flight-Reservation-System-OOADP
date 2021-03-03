@@ -30,50 +30,41 @@ public class TouristTicket extends Ticket {
           this.selectedTourLocations = selectedTourLocations;
      }
 
-    /* public String getTouristLocations() {
+    public void getTouristLocations() {
           String getTour[] = new String[5];
-          getTour[1] = "resort1";
-          getTour[2] = "resort2";
-          getTour[3] = "resort3";
-          getTour[4] = "resort4";
-          getTour[5] = "resort5";
+          getTour[0] = "beach";
+          getTour[1] = "ocean park";                        //just showing details of tourist locations
+          getTour[2] = "chocolate factory";
+          getTour[3] = "beach123";
+          getTour[4] = "ocean park123";
           System.out.println("tourist locations :");
-          for (int i = 1; i <= 5; i++) {
-               System.out.print(getTour[i]);
+          for (int i = 0; i < 5; i++) {
+               System.out.print(getTour[i] );
           }
-          return null;
-     } */
-
-     public void removeTouristLocations(String location) {
-          int index = -1;
-          for (int i = 0; i < selectedTourLocations.length; i++) {
-               if (selectedTourLocations[i].equals(location)) {
-                    index = i;
-                    break;
-               }
-          }
-          if (index == -1) {
-               return;
-              }
-
-          for (int i = index; i < selectedTourLocations.length - 1; i++) {
-               selectedTourLocations[i] = selectedTourLocations[i + 1];
-          }
-          selectedTourLocations[selectedTourLocations.length - 1] = null;
-
+          System.out.println();
      }
-          public void addTourlistLocations (String location){
-          int index = -1;
-          for(int i=0;i< selectedTourLocations.length;i++){
-               if(selectedTourLocations[i] == null){
-                    index = i;
-                    break;
-               }
-          }
-          if (index != -1) {
-               selectedTourLocations[index] = location;
-          }
 
+     public void removeTouristLocations(String removeLocation) {
+          int currrentLength = selectedTourLocations.length;
+          int afterRemoveLength = currrentLength -1;
+          String tempArray[] = new String[afterRemoveLength];   // removing the tour locations
+          for(int i=0 ,k = 0;i<currrentLength;i++){
+               if( selectedTourLocations[i].equals(removeLocation)) {
+                continue;
+               }
+               tempArray[k++] = selectedTourLocations[i];
+          }
+         selectedTourLocations = tempArray;
+     }
+          public void addTourlistLocations (String addTour){
+          int currrentLength = selectedTourLocations.length;
+          int newLength = currrentLength +1;
+          String tempArray[] = new String[newLength];
+          for(int i=0;i<currrentLength;i++){
+               tempArray[i] = selectedTourLocations[i];                    // add tour locations
+          }
+          tempArray[newLength - 1] = addTour;
+          selectedTourLocations = tempArray;
           }
      }
 
