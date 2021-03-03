@@ -15,11 +15,11 @@ public class Main {
 
         Flight flight1 = new Flight("AP210D","AIRJET",50, 20);
 
-        RegularTicket regularTicket = new RegularTicket("1512553D", 1500.00f,"24D" ,"SPICE JET",flight1,
+        RegularTicket regularTicket = new RegularTicket("12345", 1500.00f,"24D" ,"SPICE JET",flight1,
                 passenger1 , "DELHI","VIZAG" ,"2/3/2021 10:30:30",
                 "2/3/2021 12:30:30", false , "Fried Rice");
 
-        TouristTicket touristTicket = new TouristTicket("1512A1",25000.00f,"12E","AIR INDIA",null,null,
+        TouristTicket touristTicket = new TouristTicket("23456",25000.00f,"12E","AIR INDIA",null,null,
                 "CHENNAI","MALDIVES","DepartureDateAndTime",
                 "ArrivalDateAndTime",false,"maldives beach no 123",new String[]{"beach","ocean park","chocolate factory"});
 
