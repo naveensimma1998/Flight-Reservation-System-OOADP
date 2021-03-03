@@ -1,5 +1,7 @@
 package com.company;
-import java.time.LocalDateTime;
+import java.text.SimpleDateFormat;
+import  java.util.Date;
+import  java.text.ParseException;
 public abstract class Ticket {
     private String pnr;
     private float price;
@@ -124,15 +126,26 @@ public abstract class Ticket {
         return "cancelled";
     }
 
-    public  int flightDuration(){
-        LocalDateTime departureLocalDateTime = LocalDateTime.parse(departureDateAndTime);
-        LocalDateTime arrivalLocalDateTime = LocalDateTime.parse(arrivalDateAndTime);
+    public String flightDuration(){
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+        Date d1 = null;
+        Date d2 = null;
+        try {
+            d1 = format.parse(departureDateAndTime);
+            d2 = format.parse(arrivalDateAndTime);
+        } catch (ParseException e){
+            e.printStackTrace();
+        }
+        long diff = d2.getTime() - d1.getTime();
+        long diffSeconds = diff/1000;
+        long diffMinutes = diff/(60*1000) ;
+        long diffHours = diff/(60*60*1000) ;
+        return diffHours + " " + diffMinutes + " " + diffSeconds ;
 
-        return (arrivalLocalDateTime.getDayOfMonth() - departureLocalDateTime.getDayOfMonth())*24  + (arrivalLocalDateTime.getHour()
-        - departureLocalDateTime.getHour());
     }
 
     public  void cancel(){
+        cancelled = true;
         System.out.println("your ticket get cancelled");
     }
 

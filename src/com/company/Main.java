@@ -6,8 +6,8 @@ public class Main {
 
 
         RegularTicket regularTicket = new RegularTicket("1512553D", 1500.00f,"24D" ,"SPICE JET",null,
-                null, "DELHI","VIZAG" ,"DepartureDateAndTime",
-                "ArrivalDateAndTime", false , "Fried Rice");
+                null, "DELHI","VIZAG" ,"2/3/2021 10:30:30",
+                "2/3/2021 12:30:30", false , "Fried Rice");
 
         TouristTicket touristTicket = new TouristTicket("1512A1",25000.00f,"12E","AIR INDIA",null,null,
                 "CHENNAI","MALDIVES","DepartureDateAndTime",
@@ -16,6 +16,7 @@ public class Main {
         System.out.println(regularTicket.getFlightName());
         System.out.println(regularTicket.getPnr());
         System.out.println(touristTicket.getPnr());
+        System.out.println(regularTicket.flightDuration());
 
     }
 
