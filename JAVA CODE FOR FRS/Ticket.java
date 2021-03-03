@@ -2,7 +2,7 @@ package com.company;
 import java.text.SimpleDateFormat;
 import  java.util.Date;
 import  java.text.ParseException;
-public abstract class Ticket {
+public  class Ticket {
     private String pnr;
     private float price;
     private String seatNumber;

@@ -6,9 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Passenger passenger1 = new Passenger( "king 12 street","VIZAG","AndhraPradesh","naveen simma",
+                "simmanaveen1234@gmail.com","9989818428");
 
-        RegularTicket regularTicket = new RegularTicket("1512553D", 1500.00f,"24D" ,"SPICE JET",null,
-                null, "DELHI","VIZAG" ,"2/3/2021 10:30:30",
+        Passenger passenger2 = new Passenger( "queen street 123","VIZAG","AndhraPradesh","naveena",
+                "example@gmail.com ","9876543210");
+
+
+        Flight flight1 = new Flight("AP210D","AIRJET",50, 20);
+
+        RegularTicket regularTicket = new RegularTicket("1512553D", 1500.00f,"24D" ,"SPICE JET",flight1,
+                passenger1 , "DELHI","VIZAG" ,"2/3/2021 10:30:30",
                 "2/3/2021 12:30:30", false , "Fried Rice");
 
         TouristTicket touristTicket = new TouristTicket("1512A1",25000.00f,"12E","AIR INDIA",null,null,
@@ -28,6 +36,8 @@ public class Main {
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
         touristTicket.removeTouristLocations("beach123");
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
+        System.out.println(passenger2.getId());
+
     }
 
 }
