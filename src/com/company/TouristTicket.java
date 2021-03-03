@@ -39,7 +39,7 @@ public class TouristTicket extends Ticket {
           getTour[4] = "ocean park123";
           System.out.println("tourist locations :");
           for (int i = 0; i < 5; i++) {
-               System.out.print(getTour[i] );
+               System.out.print(getTour[i] + "  ");
           }
           System.out.println();
      }
