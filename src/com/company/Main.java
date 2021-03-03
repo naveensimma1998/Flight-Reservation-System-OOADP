@@ -23,6 +23,7 @@ public class Main {
                 "CHENNAI","MALDIVES","DepartureDateAndTime",
                 "ArrivalDateAndTime",false,"maldives beach no 123",new String[]{"beach","ocean park","chocolate factory"});
 
+        /*
         System.out.println(regularTicket.getFlightName());
         touristTicket.getTouristLocations();
         System.out.println(regularTicket.getPnr());
@@ -30,14 +31,22 @@ public class Main {
         System.out.println(regularTicket.flightDuration());
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
         touristTicket.addTourlistLocations( "beach123");
-        touristTicket.addTourlistLocations("ocean park123");
+        touristTicket.addTourlistLocations("ocean park123");                                //  Demo printing values
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
         touristTicket.removeTouristLocations("beach");
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
         touristTicket.removeTouristLocations("beach123");
         System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
         System.out.println(passenger2.getId());
+ */
+
+        printTicketDetails(regularTicket);
+        printTicketDetails(touristTicket);
+    }
+public static void printTicketDetails(Ticket ticket){
+        System.out.println(ticket.getPnr());                    //Method to print pnr of both type of tickets
 
     }
+
 
 }
