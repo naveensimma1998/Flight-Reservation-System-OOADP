@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,13 +13,13 @@ public class Main {
 
         TouristTicket touristTicket = new TouristTicket("1512A1",25000.00f,"12E","AIR INDIA",null,null,
                 "CHENNAI","MALDIVES","DepartureDateAndTime",
-                "ArrivalDateAndTime",false,"maldives beach no 123",new String[]{"beach","ocean park"});
+                "ArrivalDateAndTime",false,"maldives beach no 123",new String[]{"beach","ocean park","chocolate factory"});
 
         System.out.println(regularTicket.getFlightName());
         System.out.println(regularTicket.getPnr());
         System.out.println(touristTicket.getPnr());
         System.out.println(regularTicket.flightDuration());
-
+        System.out.println(Arrays.toString(touristTicket.getSelectedTourLocations()));
     }
 
 }
